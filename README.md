@@ -1,0 +1,1 @@
+# minimal-api-aspnetcore-sample.net
