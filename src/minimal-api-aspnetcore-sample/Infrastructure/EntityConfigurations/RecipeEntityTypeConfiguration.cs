@@ -24,6 +24,11 @@ namespace minimal_api_aspnetcore_sample.Infrastructure.EntityConfigurations
                 .WithOne(r => r.Recipe)
                 .HasForeignKey(r => r.RecipeId)
                 .OnDelete(DeleteBehavior.Cascade);
+
+             builder.HasMany(r => r.Instructions)
+                .WithOne(r => r.Recipe)
+                .HasForeignKey(r => r.RecipeId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

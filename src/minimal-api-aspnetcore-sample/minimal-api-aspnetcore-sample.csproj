@@ -25,11 +25,4 @@
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
 	</ItemGroup>
 
-
-	<ItemGroup>
-    <Folder Include="Endpoints\Contracts\" />
-    <Folder Include="Infrastructure\Exceptions\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
-
 </Project>
