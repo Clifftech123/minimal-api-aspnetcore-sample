@@ -6,5 +6,30 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>minimal_api_aspnetcore_sample</RootNamespace>
   </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="AWSSDK.S3" Version="3.7.309.11" />
+		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.2" />
+		<PackageReference Include="MassTransit" Version="8.2.3" />
+		<PackageReference Include="MassTransit.RabbitMQ" Version="8.2.3" />
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.6" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.6" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.6" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.6">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+    <Folder Include="Endpoints\Contracts\" />
+    <Folder Include="Infrastructure\Exceptions\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
 
 </Project>
