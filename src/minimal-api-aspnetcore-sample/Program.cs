@@ -23,12 +23,16 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseExceptionHandler();
 
-app.MapGroup("/api/v1/instructions")
+app.MapGroup("/api/v1/")
    .WithTags("Instruction endpoints ")
    .MapInstructionEndpoints();
 
-app.MapGroup("/api/v1/ingredient")
+app.MapGroup("/api/v1/")
    .WithTags(" Ingredient endpoints ")
    .MapIngredientEndpoints();
+
+app.MapGroup("/api/v1/")
+    .WithTags(" Recipe endpoints ")
+    .MapRecipeEndPoints();
 
 app.Run();

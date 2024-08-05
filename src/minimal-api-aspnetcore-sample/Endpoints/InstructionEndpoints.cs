@@ -5,7 +5,6 @@ namespace minimal_api_aspnetcore_sample.Endpoints
 {
     public static class InstructionEndpoints
     {
-
         public static IEndpointRouteBuilder MapInstructionEndpoints(this IEndpointRouteBuilder app)
         {
 
