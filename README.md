@@ -41,10 +41,7 @@ Contributions are welcome! Here's how you can help:
 - Report bugs
 - Suggest features
 - Submit pull requests
-```
 
-```markdown
-```
 
 Changes made:
 1. Corrected typos and grammatical errors.
