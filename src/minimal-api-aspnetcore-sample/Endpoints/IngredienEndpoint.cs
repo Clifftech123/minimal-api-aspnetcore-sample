@@ -19,7 +19,7 @@ namespace minimal_api_aspnetcore_sample.Endpoints
 
 
         // create ingredient
-        public static async Task<IResult> CreateIngredient(CreateIngredientRequest request, IngredientSerivices ingredientService)
+        public static async Task<IResult> CreateIngredient(CreateIngredientRequest request, IngredientServices ingredientService)
         {
             var createdIngredient = await ingredientService.CreateIngredientAsync(request);
             return Results.Created($"/ingredient/{createdIngredient.Id}", createdIngredient);
@@ -28,7 +28,7 @@ namespace minimal_api_aspnetcore_sample.Endpoints
 
         // Update ingredient by id
 
-        public static async Task<IResult> UpdateIngredient(int id, CreateIngredientRequest request, IngredientSerivices ingredientService)
+        public static async Task<IResult> UpdateIngredient(int id, CreateIngredientRequest request, IngredientServices ingredientService)
         {
             var updatedIngredient = await ingredientService.UpdateIngredientAsync(id, request);
             return updatedIngredient != null ? Results.Ok(updatedIngredient) : Results.NotFound();
@@ -36,7 +36,7 @@ namespace minimal_api_aspnetcore_sample.Endpoints
 
         // delete ingredient by id
 
-        public static async Task<IResult> DeleteIngredient(int id, IngredientSerivices ingredientService)
+        public static async Task<IResult> DeleteIngredient(int id, IngredientServices ingredientService)
         {
             var success = await ingredientService.DeleteIngredientAsync(id);
             return success ? Results.NoContent() : Results.NotFound();
@@ -44,7 +44,7 @@ namespace minimal_api_aspnetcore_sample.Endpoints
 
         // get all ingredients
 
-        public static async Task<IResult> GetIngredientsAsync(IngredientSerivices ingredientService)
+        public static async Task<IResult> GetIngredientsAsync(IngredientServices ingredientService)
         {
             var ingredients = await ingredientService.GetIngredientsAsync();
             return Results.Ok(ingredients);
@@ -52,7 +52,7 @@ namespace minimal_api_aspnetcore_sample.Endpoints
 
 
         // get ingredient by id
-        public static async Task<IResult> GetIngredientById(int id, IngredientSerivices ingredientService)
+        public static async Task<IResult> GetIngredientById(int id, IngredientServices ingredientService)
         {
             var ingredient = await ingredientService.GetIngredientByIdAsync(id);
             return ingredient != null ? Results.Ok(ingredient) : Results.NotFound();

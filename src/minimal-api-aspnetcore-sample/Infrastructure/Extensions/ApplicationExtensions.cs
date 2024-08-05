@@ -24,7 +24,7 @@ namespace minimal_api_aspnetcore_sample.Infrastructure.Extensions
             builder.Services.AddProblemDetails();
 
             builder.Services.AddScoped<InstructionServices>();
-            builder.Services.AddScoped<IngredientSerivices>();
+            builder.Services.AddScoped<IngredientServices>();
             builder.Services.AddScoped<RecipeService>();
 
         }

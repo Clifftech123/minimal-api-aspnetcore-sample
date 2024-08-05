@@ -7,9 +7,9 @@ namespace minimal_api_aspnetcore_sample.Infrastructure.Context
     {
         private const string DefaultSchema = "recipe";// This is the default schema for the database
 
-        public DbSet<Recipe> Recipes { get; set; }
-        public DbSet<Ingredient> Ingredients { get; set; }
-        public DbSet<Instruction> Instructions { get; set; }
+        public virtual DbSet<Recipe> Recipes { get; set; }
+        public virtual DbSet<Ingredient> Ingredients { get; set; }
+        public virtual DbSet<Instruction> Instructions { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

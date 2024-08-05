@@ -6,12 +6,12 @@ using minimal_api_aspnetcore_sample.Models;
 
 namespace minimal_api_aspnetcore_sample.Services
 {
-    public class IngredientSerivices
+    public class IngredientServices
     {
         private readonly ApplicationContext _context;
-        private readonly ILogger<IngredientSerivices> _logger;
+        private readonly ILogger<IngredientServices> _logger;
 
-        public IngredientSerivices(ApplicationContext context, ILogger<IngredientSerivices> logger)
+        public IngredientServices(ApplicationContext context, ILogger<IngredientServices> logger)
         {
             _context = context;
             _logger = logger;
