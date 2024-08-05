@@ -23,7 +23,8 @@ ASP.NET Core 8 introduces a new way to create APIs with minimal code. This proje
 2. Change to the project directory:
 
     ```bash
-    cd minimal-api-sample
+    cd src/minimal-api-aspnetcore-sample
+
     ```
 
 3. Run the project:
